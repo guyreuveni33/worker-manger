@@ -13,6 +13,8 @@ import {
 } from './handlers/userHandlers';
 
 function App() {
+    const today = new Date().toISOString().split('T')[0];
+
     const [users, setUsers] = useState([]);
     const [shown, setShown] = useState(false);
     const [isEditing, setIsEditing] = useState(false);
@@ -21,7 +23,7 @@ function App() {
     const [formData, setFormData] = useState({
         firstName: '',
         lastName: '',
-        dateStarted: '',
+        dateStarted: today, // Set the default date to today
         email: '',
         role: '',
         salary: '',
