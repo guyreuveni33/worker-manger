@@ -30,18 +30,20 @@ if (runMode === 'app') {
     })
   )
 
-  server.use(
-    koaCors({
-      methods: 'POST, GET, PUT, DELETE, OPTIONS',
-      allowMethods: 'Origin, X-Requested-With, Content-Type, Accept',
-      credentials: true
-    })
-  )
+    server.use(
+        koaCors({
+            methods: ['POST', 'GET', 'PUT', 'DELETE', 'OPTIONS'],
+            allowHeaders: ['Origin', 'X-Requested-With', 'Content-Type', 'Accept'],
+            credentials: true
+        })
+    );
 
-  require('./routes')(server)
+
+    require('./routes')(server)
 }
 
 const port = config.ports[runMode]
 
 log.info(`started in ${APP_ENV} env, listening to port ${port}`)
+console.log(`started in ${APP_ENV} env, listening to port ${port}`);
 server.listen(port)
