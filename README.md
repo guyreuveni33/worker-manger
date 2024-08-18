@@ -1,61 +1,76 @@
-# Lendlord-home-exam
+Here's a README tailored to your current project. You can modify it as needed.
 
-# backend
+# User Management System
 
-Backend already configured using koa, works with cors
-You would need a local version of mongodb installed on your machine.
+Manage your team effortlessly with our User Management System, featuring a clean interface and comprehensive functionalities to add, edit, and delete user information.
 
-- `npm i`
+## Overview
 
-# front
+This User Management System was developed as a project to demonstrate the implementation of a React frontend with a Node.js backend. The system allows users to manage employee records, including personal details, roles, and salaries, with real-time updates and filtering capabilities.
 
-A simple create-react-app with lendlord's logo
+### Technologies Used
 
-- `npm i`
+- **React**: Frontend development, providing a responsive and interactive user experience.
+- **Node.js & Express**: Backend server to handle API requests and manage user data.
+- **MongoDB**: Database for storing and managing user records.
+- **CSS**: Styling the application for a clean and modern interface.
 
-# Assignment
+### Application Interfaces
 
-You are asked to describe a model following user roles:
-Manager 
-Worker
-Driver
+**Main Screen:**
+- Options to filter users by role and add new users.
+- A table displays all users with their details, including the ability to sort and filter by various columns.
+- Action buttons for editing and deleting user information.
 
-Each user have the following attributes:
-- firstName
-- lastName
-- email
-- dateStarted
-- salary 
+![image](https://github.com/user-attachments/assets/33f69714-a305-421a-a733-f337b7413fa8)
 
-Each worker / driver has a specific manager to manage him.
+**User Management Modal:**
+- A modal form to add or edit user details, including:
+  - **First Name & Last Name**
+  - **Email**
+  - **Date Started**
+  - **Role**
+  - **Salary**
+  - **Manager**
+- Real-time validation and feedback during input.
 
-Define the following APIs:
-- getAllUsers - returns an array of users
-- getUserById
-- update
-- create
-- delete
-- getManagerAndEmployees - returns a manager object with an array of his employees
+### Getting Started
 
-Frontend:
-Create a table to display all of the information.
-Add to the table the following actions: 
-Create,
-Edit,
-Delete
+To set up and run the application, follow these steps:
 
-Table should display all information along with the manager name for each employee
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/yourusername/yourrepository.git
+   ```
+2. **Navigate to the project directory:**
+   ```bash
+   cd yourrepository
+   ```
+3. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+4. **Start the backend server:**
+   ```bash
+   npm run server
+   ```
+5. **Start the frontend:**
+   ```bash
+   npm start
+   ```
+6. **Access the application at `http://localhost:3000` in your web browser.**
 
-Bonus: Add sort and filter for the table
+### How to Contribute
 
-You can use a local mongo db or the following db: https://mockaroo.com/
+Contributions are highly encouraged! If you have ideas for improvements or new features, feel free to fork the repository, make your changes, and submit a pull request. Please ensure your code is well-documented and that you include relevant tests for your updates.
 
-You can use the following design or any other design you’d like:
+### Features
 
+- **Add User**: Input user details and add them to the system.
+- **Edit User**: Modify existing user details.
+- **Delete User**: Remove users from the system.
+- **Sorting & Filtering**: Easily sort and filter user data by different fields.
 
-<img width="1104" alt="Screen Shot 2022-03-22 at 19 21 43" src="https://user-images.githubusercontent.com/33543070/159538946-e977754c-9580-43b6-9383-3a45b9605d5d.png">
+---
 
-
-
-<img width="599" alt="Screen Shot 2022-03-22 at 19 22 01" src="https://user-images.githubusercontent.com/33543070/159538990-ff14e72c-fd4e-471c-9679-1998fccbab97.png">
-
+Feel free to modify the paths for images and any specific URLs related to your project. If you want to include a picture of the main screen, ensure that the image is hosted somewhere accessible, such as in your GitHub repository, and update the `![Main Screen](image-url)` line with the correct link.
