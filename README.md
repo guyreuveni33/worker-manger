@@ -1,5 +1,3 @@
-Here's a README tailored to your current project. You can modify it as needed.
-
 # User Management System
 
 Manage your team effortlessly with our User Management System, featuring a clean interface and comprehensive functionalities to add, edit, and delete user information.
@@ -40,7 +38,7 @@ To set up and run the application, follow these steps:
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/yourrepository.git
+   git clone https://github.com/guyreuveni33/Worker-Manger.git  
    ```
 2. **Navigate to the project directory:**
    ```bash
@@ -70,7 +68,3 @@ Contributions are highly encouraged! If you have ideas for improvements or new f
 - **Edit User**: Modify existing user details.
 - **Delete User**: Remove users from the system.
 - **Sorting & Filtering**: Easily sort and filter user data by different fields.
-
----
-
-Feel free to modify the paths for images and any specific URLs related to your project. If you want to include a picture of the main screen, ensure that the image is hosted somewhere accessible, such as in your GitHub repository, and update the `![Main Screen](image-url)` line with the correct link.
