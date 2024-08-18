@@ -13,6 +13,7 @@
   "dependencies": {
     "@koa/cors": "^3.2.0",
     "bunyan": "^1.8.15",
+    "date-fns": "^3.6.0",
     "dotenv": "^16.0.0",
     "koa": "^2.8.1",
     "koa-body": "^6.0.1",
